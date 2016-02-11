@@ -7,6 +7,7 @@
               app = express();
 
     mongoose.connect(mongoURI);
+    console.log(process.env.MONGOLAB_URI);
     routes(app);
 
     app.use('/public', express.static(process.cwd() + '/public'));
