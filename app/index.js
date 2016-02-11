@@ -3,7 +3,7 @@
     const express = require('express'),
            routes = require('./routes'),
          mongoose = require('mongoose'),
-         mongoURI = process.env.MONGOLAB_URI || 'mongodb://localhost27017';
+         mongoURI = process.env.MONGOLAB_URI || 'mongodb://localhost:27017',
               app = express();
 
     mongoose.connect(mongoURI);
