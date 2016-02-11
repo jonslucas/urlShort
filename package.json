@@ -1,0 +1,21 @@
+{
+  "name": "url-short",
+  "version": "1.0.0",
+  "description": "A simple url shortening microservice",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Jon Lucas",
+  "license": "MIT",
+  "dependencies": {
+    "express": "^4.13.4",
+    "mongoose": "^4.4.3"
+  },
+  "devDependencies": {
+    "cssmin": "^0.4.3",
+    "jshint": "^2.9.1",
+    "mocha": "^2.4.5",
+    "node-sass": "^3.4.2"
+  }
+}
