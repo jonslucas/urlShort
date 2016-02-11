@@ -4,7 +4,11 @@
   "description": "A simple url shortening microservice",
   "main": "server.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "pretest": "jshint **.js",
+    "test": "mocha test/",
+    "prebuild:css": "node-sass public/css/main.scss public/css/main.css",
+    "build:css": "cssmin public/css/main.css > public/css/main.min.css",
+    "serve": "npm test -s && npm run build:css -s && npm start -s"
   },
   "author": "Jon Lucas",
   "license": "MIT",
