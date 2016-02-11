@@ -10,7 +10,7 @@
             });
         app.route('/:shortURL')
             .get(Binder.findShort);
-        app.route('/bind/:url')
+        app.route('/bind/*')
             .get(Binder.findDest);
     };
 })();
