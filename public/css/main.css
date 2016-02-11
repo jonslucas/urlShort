@@ -1,4 +1,21 @@
+@import url("https://fonts.googleapis.com/css?family=Source+Code+Pro");
+@import url("https://fonts.googleapis.com/css?family=Montserrat");
+@import url("https://fonts.googleapis.com/css?family=Roboto");
+@import url("https://fonts.googleapis.com/css?family=Lato");
 .container {
-  font-size: 5em;
-  width: 40em;
-  margin: 0 auto; }
+  width: 50em;
+  margin: 0 auto;
+  font-family: 'Lato', sans-serif; }
+  .container .header {
+    font-size: 4em;
+    font-family: 'Roboto', sans-serif; }
+  .container .userStories li {
+    font-family: 'Montserrat', sans-serif; }
+  .container .exInput {
+    color: blue;
+    font-family: "Source Code Pro"; }
+  .container .exOutput {
+    color: red;
+    font-family: "Source Code Pro"; }
+    .container .exOutput span {
+      display: block; }

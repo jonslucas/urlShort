@@ -4,11 +4,10 @@
   "description": "A simple url shortening microservice",
   "main": "server.js",
   "scripts": {
-    "pretest": "jshint **.js",
-    "test": "mocha test/",
+    "lint": "jshint **.js",
     "prebuild:css": "node-sass public/css/main.scss public/css/main.css",
     "build:css": "cssmin public/css/main.css > public/css/main.min.css",
-    "serve": "npm test -s && npm run build:css -s && npm start -s"
+    "serve": "npm run lint -s && npm run build:css -s && npm start -s"
   },
   "author": "Jon Lucas",
   "license": "MIT",
@@ -20,7 +19,6 @@
   "devDependencies": {
     "cssmin": "^0.4.3",
     "jshint": "^2.9.1",
-    "mocha": "^2.4.5",
     "node-sass": "^3.4.2"
   }
 }

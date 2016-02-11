@@ -6,7 +6,35 @@
     </head>
     <body>
         <div class="container">
-            Some Test Content
+            <div class="header">
+                FCC - URL Microservice
+            </div>
+            <div >
+                <h2>Meeting these qualifications:</h2>
+                <ul class="userStories">
+                    <li> I can pass a URL as a parameter and I will receive a shortened URL in the JSON response.</li>
+                    <li> If I pass an invalid URL that doesn't follow the valid http://www.example.com format, the JSON response will contain an error instead.</li>
+                    <li> When I visit that shortened URL, it will redirect me to my original link.</li>
+                </ul>
+            </div>
+            <div class="usageExamples">
+                <h1>Example Usage:</h1>
+                <h2>Creating Shortened URL </h2>
+                <h3>Input URL:</h3>
+                <div class="exInput">https://fcc-shortie.herokuapp.com/bind/http://freecodecamp.com</div>
+                <h3>Response From Server:</h3>
+                <div class="exOutput">
+                    <span>{ </span>
+                    <span>"destURL" : "http://freecodecamp.com",</span>
+                    <span>"shortURL" : "http://fcc-shortie.herokuapp.com/zn8Jv"</span>
+                    <span>}</span>
+                </div>
+                <h2>Using Shortened URL</h2>
+                <h3>Input URL:</h3>
+                <div class="exInput">http://fcc-shortie.herokuapp.com/zn8Jv</div>
+                <h3>Will Redirect You To:</h3>
+                <div class="exOutput">http://freecodecamp.com</div>
+            </div>
         </div>
     </body>
 </html>
